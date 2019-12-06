@@ -74,12 +74,20 @@ public class FileUtil {
 	public static void deleteFile(String filePath) {
 		deleteFile(new File(filePath));
 	}
+	
+	//根据文件获取文件大小
+	public static String getFileSize(String fileName) {
+		File file = new File(fileName);
+		long length = file.length();
+		double l=length/1024.0;
+		return String.format("%.2f", l)+"kb";
+	}
 	//测试
 	public static void main(String[] args) {
 		/*System.out.println(getEndName("1.txt"));*/
 		/*deleteFile("C:\\Users\\ASUS\\Desktop\\新建文件夹");*/
-		System.out.println(getFileContext("C:\\Users\\ASUS\\Desktop\\配置文件2\\web.xml"));
-		
+		/*System.out.println(getFileContext("C:\\Users\\ASUS\\Desktop\\配置文件2\\web.xml"));*/
+		System.out.println(getFileSize("C:\\Users\\ASUS\\Desktop\\配置文件2\\web.xml"));
 	}
 	
 }
