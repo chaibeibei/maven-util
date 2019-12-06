@@ -24,7 +24,7 @@ public class DateUtil {
 		 Calendar calendar=Calendar.getInstance();
 		 int nowyear = calendar.get(Calendar.YEAR);
 		 int nowmoth = calendar.get(Calendar.MONTH);
-		 int nowDay = calendar.get(Calendar.DAY_OF_MONTH);
+		 int nowDay =  calendar.get(Calendar.DAY_OF_MONTH);
 		 //设置生日
 		 
 		 calendar.setTime(java.sql.Date.valueOf(birthDate));
