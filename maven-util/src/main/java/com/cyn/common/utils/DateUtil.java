@@ -1,4 +1,4 @@
-package com.bw.common.utils;
+package com.cyn.common.utils;
 /**   
 * @Title: DateUtil.java 
 * @Package com.bw.common.utils 

@@ -1,4 +1,4 @@
-package com.bw.common.utils;
+package com.cyn.common.utils;
 
 import java.util.Random;
 
